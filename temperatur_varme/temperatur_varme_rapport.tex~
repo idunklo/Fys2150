@@ -1,0 +1,110 @@
+\documentclass[a4paper,norsk,12pt,oneside]{article}
+% To use norwegian
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[norsk]{babel}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{graphicx} % images
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{fancyvrb} % code
+\usepackage{algorithm2e} % algorithm
+% For listing
+\usepackage{listings} % code with color
+\usepackage{courier}
+\usepackage{caption}
+\usepackage{color}
+
+\title{Fys-2130, rapport 1 - strøm og spenning}
+\author{Idun Kløvstad}
+\date{\today}  
+
+% Command for L'Hopital's rule (requires extarrows-package)
+\newcommand{\Heq}[1]{\xlongequal[\mathrm{L'H}]{\left[#1\right]}}
+
+% Double underline
+\newcommand{\dul}[1]{\underline{\underline{#1}}}
+
+% Custom operators
+\DeclareMathOperator{\nul}{Nul\,}
+\DeclareMathOperator{\Proj}{Proj\,}
+\DeclareMathOperator{\Sp}{Sp\,}
+\DeclareMathOperator{\res}{Res\,}
+\DeclareMathOperator{\Log}{Log\,}
+
+% Allow displayed page breaks
+\allowdisplaybreaks
+
+% Settings for listings
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{%
+  %language=python,                     % the language of the code
+  basicstyle=\footnotesize\ttfamily,   % the size of the fonts that are used for the code
+  numbers=left,                        % where to put the line-numbers
+  numberstyle=\tiny,                   % the style that is used for the line-numbers
+  stepnumber=2,                        % the step between two line-numbers. If it's 1, each line will be numbered
+  numbersep=5pt,                       % how far the line-numbers are from the code
+  extendedchars=true,
+  %backgroundcolor=\color{white},       % choose the background color. You must add \usepackage{color}
+  %showspaces=false,                    % show spaces adding particular underscores
+  showstringspaces=false,              % underline spaces within strings
+  %showtabs=false,                      % show tabs within strings adding particular underscores
+  %frame=single,                        % adds a frame around the code
+  frame=b,                             % adds a line at the bottom
+  %rulecolor=\color{black},             % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                           % sets default tabsize to 2 spaces
+  %captionpos=b,                        % sets the caption-position to bottom
+  breaklines=true,                     % sets automatic line breaking
+  breakatwhitespace=false,             % sets if automatic breaks should only happen at whitespace
+  %title=\lstname,                      % show the filename of files included with \lstinputlisting; also try caption instead of title
+  keywordstyle=\color{blue},           % keyword style
+  commentstyle=\color{dkgreen}\textit, % comment style
+  stringstyle=\color{mauve},           % string literal style
+  %escapeinside={\%*}{*)},              % if you want to add LaTeX within your code
+  %morekeywords={*,...},                % if you want to add more keywords to the set
+  xleftmargin=-20pt,
+  xrightmargin=-20pt,
+  framexleftmargin=19pt,
+  framexbottommargin=4pt,
+  framexrightmargin=21pt,
+} 
+
+% caption for listing
+\newlength{\mycapwidth}\setlength{\mycapwidth}{\textwidth}
+\addtolength{\mycapwidth}{75pt}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0, 0, 0, 0.8}
+    {\parbox{\mycapwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, 
+    singlelinecheck=false, margin=-40pt, font={bf,footnotesize}}
+
+
+\begin{document}
+\maketitle
+\newpage
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduksjon}
+
+\section{Teori}
+
+\section{Eksperimentelt}
+
+\section{Resultater}
+
+\section{Diskusjon}
+
+\section{Konklusjon}
+
+\bibliography{referanser}
+\end{document}                                             
+            
