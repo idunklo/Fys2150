@@ -1,0 +1,10 @@
+import numpy as np
+
+def usikker_add(delta_A, delta_B):
+    delta_Z = np.sqrt(delta_A**2 + delta_B**2)
+    return delta_Z
+
+def usikker_
+
+
+first_step = usikker_add(0.2, 0.1)

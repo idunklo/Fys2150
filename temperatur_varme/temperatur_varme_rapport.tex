@@ -1,4 +1,6 @@
 \documentclass[a4paper,norsk,12pt,oneside]{article}
+%\documentclass[11pt,twocolumn]{article}
+
 % To use norwegian
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -19,7 +21,7 @@
 \usepackage{caption}
 \usepackage{color}
 
-\title{Fys-2130, rapport 1 - strøm og spenning}
+\title{Fys-2130\\ varme og temperatur}
 \author{Idun Kløvstad}
 \date{\today}  
 
@@ -91,15 +93,118 @@
 \newpage
 
 \begin{abstract}
+    Denne rapporten vil ta for seg temometri, samt måling av termisk diffusivitet. 
 \end{abstract}
 
-\section{Introduksjon}
+\section{Introduksjon og teori}
 
-\section{Teori}
+Det aktive elementet i termistorer som brukes til temperaturlåling er små biter av 
+halvledere laget av f.eks. keramiske metalloksyder eller silisium og germanium. 
+Termistoren funker slik at antallet elektroner som eksiterer til ledningsbåndet øker med 
+temperaturen. Dermed går den elektriske motstanden, \(R\) raskt ned med økende temperatur. 
+(hentet fra oppgaveteksten) 
+Temperaturen til et objekt kan derfor bestemmes ved hjelp av en termistor og likningen 
+under, likning \ref{eq:hart}, som kalles Steinhart-Hart-likningen. 
+
+\begin{equation}\label{eq:hart}
+    \frac{1}{T} = a + bln(R) + cln(R)^3
+\end{equation} 
+
+T er her temperaturen i Kelvin, R er den elektriske motstanden, målt i \(\Omega\) og a, b og c er tilpasningsparametre for kalibreringsmodellen. 
 
 \section{Eksperimentelt}
 
+\subsection{Termoelement og termistor}\label{subsec:termterm}
+
+For å undersøke om et termoelement oppfører seg som foreventet, ble termospenningen over 
+en isbit ble målt ved hjelp av et termoelement og et multimeter av typen, Fluke 45. Dette 
+ble gjort ved å stikke endene av termoelenentet ned i hvert sitt 
+lille hull i isbiten, for så å gjøre en måling. Resultatet blir fremstilt i tabell 
+\ref{tab:isbit} under seksjon 
+\ref{subsec:termres} 
+
+Den ene enden av termoelementet ble så fjernet fra isbiten og festet, med tape, til en 
+alluminiumskube som sto montert på bordet. Den andre enden av termoelementet forble i 
+isbiten. Deretter ble termospenningen målt på nytt. Oppsettet fikk stå slik over en liten 
+periode, slik at det kunne observeres om termospenningen endret seg med tid.  
+
+I neste del av forsøket festes to termistorer til alluminiumskuben, i tilegg til 
+termoelementet. De to termistorene ble festet på hver sin side av kuben. Motstandene over 
+hver termistor ble målt med multimeter av typen Fluke 75. For å få gode målinger, må 
+målingene stabelisere seg før et resultat kan skrives ned. Under dette forsøket måtte 
+det ene multimeteret byttes ut før målingene sluttet å hoppe. Det tok mellom 30 og 
+60 sekunder før målingene stabiliserte seg, etter at multimeteret ble skiftet ut. 
+Målingene fra dette forsøket er å finne i tabell \ref{termterm} under seksjon
+\ref{termres}. 
+
+\subsection{IR-termometer}
+
+Starten av dette forsøket består av å utforske hvordan et IR-termometer fungerer. Det 
+første som ble gjort var derfor å måle forskjellige ting i rommet. Det 
+
+
+
 \section{Resultater}
+
+\subsection{Termoelement og termistor}\label{subsec:termres}
+
+\begin{table}[H]  
+  \begin{center}
+      \caption{Tabellen viser viser resultatet av termospenning målt over en isbit, som 
+          beskrevet i seksjon \ref{subsec:termterm} \label{tab:isbit}}
+  \begin{tabular}{|c|} \hline
+      \textbf{\(\epsilon_T\)} \\ \hline
+  \(0.01 mV\)\\ \hline
+  \end{tabular}
+  \end{center}
+\end{table}  
+
+I tabellen under finnes målingene av motstand, \(R_1\) og \(R_2\), gjennom to termistorer 
+på aluminiumskloss som beskrevet i seksjon \ref{subsec:termterm}, etter at målingene ble 
+stabile, samt termospenningen, \(\epsilon_T\), som ble målt mellom kloss og isbit. Første 
+måling i tabellen inkluderer ikke måling av motstand, fordi den ble gjort før termistorene 
+ble koblet til kuben. Det ble observert at termospenningen mellom kuben og isen, ikke 
+forandret seg nevneverdig over tid. Den ble muligens litt lavere. 
+
+Med motstandene målt med termistorer, kan likning \ref{eq:hart} brukes til å beregne 
+temperaturen. For å kunne relatere til informasjonen, ble det i dette tilfellet valgt å 
+regne om fra Kelvin til Celsius. Motstanden som ble brukt i utregningene er et  
+gjennomsnitt mellom det som ble målt av de to termistorene. 
+
+\begin{table}[H]  
+  \begin{center}
+      \caption{Denne tabellen viser termospenning målt mellom en aluminiumskuben og en 
+          isbit. Den viser også motstandene i to termistorer, festet til aluminiumskuben. 
+          Dette er 
+          beskrevet i seksjon \ref{subsec:termterm}. Siste kolonne viser også temperaturen 
+          av kuben, beregnet ut ifra den elektriske motstanden \label{tab:kloss}}
+  \begin{tabular}{|c|c|c|c|c|} \hline
+      \textbf{måling \#} & \textbf{\(\epsilon_T [mV]\)} & \textbf{\(R_1 [k\Omega]\)} & 
+      \textbf{\(R_2 [k\Omega]\)} & \textbf{\(T(R) [C]\)} \\ \hline
+  \(1\) & \( 0.842 \) & & & \\ \hline
+  \(2\) & \( 0.834 \) & \(114.8 \pm 0.2\) & \(114.1 \pm 0.1\) & \(22.12\) \\ \hline
+  \(3\) & \( 0.837 \) & \(114.5 \pm 0.2\) & \(113.7 \pm 0.2\) & \(22.20\)\\ \hline 
+  \end{tabular}
+  \end{center}
+\end{table} 
+
+Den beregnede usikkerheten er i dette tilfelle mye mindre enn standardavviket. 
+
+\subsection{IR-termometer}
+
+
+
+\begin{table}[H]  
+  \begin{center}
+      \caption{Denne tabellen viser egendefinerte målinger gjort i rommet, for å bli kjent 
+          med IR-termometeret\label{tab:ir1}}
+  \begin{tabular}{|c|c|c|c|} \hline
+      \textbf{Hva måles på?} & \textbf{målt temperatur [C]} & \textbf{avstand} \\ \hline
+  \(0.01 mV\)\\ \hline
+  \end{tabular}
+  \end{center}
+\end{table}       
+
 
 \section{Diskusjon}
 
