@@ -137,10 +137,16 @@ det ene multimeteret byttes ut før målingene sluttet å hoppe. Det tok mellom 
 Målingene fra dette forsøket er å finne i tabell \ref{termterm} under seksjon
 \ref{termres}. 
 
-\subsection{IR-termometer}
+\subsection{IR-termometer}\label{subsec:ireksperiment}
 
-Starten av dette forsøket består av å utforske hvordan et IR-termometer fungerer. Det 
-første som ble gjort var derfor å måle forskjellige ting i rommet. Det 
+Starten av dette forsøket består av å utforske hvordan et IR-termometer, av type Fluke 62, 
+fungerer. Det første som ble gjort var derfor å måle forskjellige ting i rommet. Avstanden 
+til det som ble målt på, ble bestemt ved å bruke meterstokk. Alle disse målingene ble 
+gjort med liten vinkel til flatenormalen. Resultatene av målingene er å finne i tabell 
+\ref{tab:ir1} under seksjon \ref{subsec:ir}.
+
+Deretter ble det gjort målinger på samme alluminiumskube som ble brukt til beregninger 
+beskrevet i seksjon \ref{subsec:termterm}. Målingene ble gjort med forskjellige vinkler, avstader og med forskjellig reflektert bakgrunn.    
 
 
 
@@ -150,7 +156,7 @@ første som ble gjort var derfor å måle forskjellige ting i rommet. Det
 
 \begin{table}[H]  
   \begin{center}
-      \caption{Tabellen viser viser resultatet av termospenning målt over en isbit, som 
+      \caption{Tabellen viser resultatet av termospenning målt over en isbit, som 
           beskrevet i seksjon \ref{subsec:termterm} \label{tab:isbit}}
   \begin{tabular}{|c|} \hline
       \textbf{\(\epsilon_T\)} \\ \hline
@@ -180,7 +186,7 @@ gjennomsnitt mellom det som ble målt av de to termistorene.
           av kuben, beregnet ut ifra den elektriske motstanden \label{tab:kloss}}
   \begin{tabular}{|c|c|c|c|c|} \hline
       \textbf{måling \#} & \textbf{\(\epsilon_T [mV]\)} & \textbf{\(R_1 [k\Omega]\)} & 
-      \textbf{\(R_2 [k\Omega]\)} & \textbf{\(T(R) [C]\)} \\ \hline
+      \textbf{\(R_2 [k\Omega]\)} & \textbf{\(T(R) [^\circ C]\)} \\ \hline
   \(1\) & \( 0.842 \) & & & \\ \hline
   \(2\) & \( 0.834 \) & \(114.8 \pm 0.2\) & \(114.1 \pm 0.1\) & \(22.12\) \\ \hline
   \(3\) & \( 0.837 \) & \(114.5 \pm 0.2\) & \(113.7 \pm 0.2\) & \(22.20\)\\ \hline 
@@ -190,20 +196,40 @@ gjennomsnitt mellom det som ble målt av de to termistorene.
 
 Den beregnede usikkerheten er i dette tilfelle mye mindre enn standardavviket. 
 
-\subsection{IR-termometer}
+\subsection{IR-termometer}\label{subsec:ir}
 
-
+Seksjon \ref{subsec:ireksperiment} beskriver målinger gjort med IR- termometeret Fluke 62.
+Tabellene under, tabell \ref{tab:ir1} og \ref viser henholdsvis resultater fra målinger gjort 
+i rommet og målinger gjort på alluminiumskloss. 
 
 \begin{table}[H]  
   \begin{center}
       \caption{Denne tabellen viser egendefinerte målinger gjort i rommet, for å bli kjent 
-          med IR-termometeret\label{tab:ir1}}
+          med IR-termometeret, Fluke 62. \label{tab:ir1}}
   \begin{tabular}{|c|c|c|c|} \hline
-      \textbf{Hva måles på?} & \textbf{målt temperatur [C]} & \textbf{avstand} \\ \hline
-  \(0.01 mV\)\\ \hline
+      \textbf{Hva måles på?} & \textbf{målt temperatur \( [^\circ C]\)} & \textbf{avstand 
+      [m]} \\ \hline
+  Bord & \(23.4\) & \(0.4\)\\ \hline
+  Vegg & \(20.2\) & \(15\)\\ \hline
+  Stolpe & \(21.8\) & \(5\)\\ \hline
   \end{tabular}
   \end{center}
-\end{table}       
+\end{table} 
+
+
+\begin{table}[H]  
+  \begin{center}
+      \caption{I denne tabellen vises resultatene etter målinger på alluminiumskube med IR-  
+          termometeret, Fluke 62. \label{tab:ir1}}
+  \begin{tabular}{|c|c|c|c|c|} \hline
+      \textbf{Hvstand til alluminiumskuben [m]} & \textbf{vinkel\( [^\circ]\)} & \textbf{reflektert bakgrunn} & målt temperatur [\(^\circ C\)] \\ \hline
+  Bord & \(23.4\) & \(0.4\)\\ \hline
+  Vegg & \(20.2\) & \(15\)\\ \hline
+  Stolpe & \(21.8\) & \(5\)\\ \hline
+  \end{tabular}
+  \end{center}
+\end{table} 
+
 
 
 \section{Diskusjon}
