@@ -21,7 +21,7 @@
 \usepackage{caption}
 \usepackage{color}
 
-\title{Fys-2130\\ varme og temperatur}
+\title{Fys-2150\\ varme og temperatur}
 \author{Idun Kløvstad}
 \date{\today}  
 
@@ -142,13 +142,17 @@ Målingene fra dette forsøket er å finne i tabell \ref{termterm} under seksjon
 Starten av dette forsøket består av å utforske hvordan et IR-termometer, av type Fluke 62, 
 fungerer. Det første som ble gjort var derfor å måle forskjellige ting i rommet. Avstanden 
 til det som ble målt på, ble bestemt ved å bruke meterstokk. Alle disse målingene ble 
-gjort med liten vinkel til flatenormalen. Resultatene av målingene er å finne i tabell 
+gjort med liten vinkel til flatenormalen. Resultatene av målingene vises i tabell 
 \ref{tab:ir1} under seksjon \ref{subsec:ir}.
 
 Deretter ble det gjort målinger på samme alluminiumskube som ble brukt til beregninger 
-beskrevet i seksjon \ref{subsec:termterm}. Målingene ble gjort med forskjellige vinkler, avstader og med forskjellig reflektert bakgrunn.    
+beskrevet i seksjon \ref{subsec:termterm}. Målingene ble gjort med forskjellige vinkler, 
+avstader og med forskjellig reflektert bakgrunn. Avstanden ble målt med meterstokk.
+Tabell \ref{tab:ir2} viser resultatet av målingene. 
 
-
+Videre i forsøket skulle IR-termometeret brukes på hver av sidene av Leslies kube. Leslies 
+kube har også en innebygd termistor. På denne måten kunne temperaturen regnes ut på to 
+forskjellige måter og resultatene kunne sammenliknes. Avstanden til Leslies kube ble målt med meterstokk.
 
 \section{Resultater}
 
@@ -199,8 +203,10 @@ Den beregnede usikkerheten er i dette tilfelle mye mindre enn standardavviket.
 \subsection{IR-termometer}\label{subsec:ir}
 
 Seksjon \ref{subsec:ireksperiment} beskriver målinger gjort med IR- termometeret Fluke 62.
-Tabellene under, tabell \ref{tab:ir1} og \ref viser henholdsvis resultater fra målinger gjort 
-i rommet og målinger gjort på alluminiumskloss. 
+Tabellene under, tabell \ref{tab:ir1} og \ref{tab:ir2} viser henholdsvis resultater fra 
+målinger gjort i rommet og målinger gjort på alluminiumskloss. Tabell .. inneholder både 
+resultater fra målinger gjort med IR-termometer på Leslies kube og målinger med kubens egne
+innebygde termistor. 
 
 \begin{table}[H]  
   \begin{center}
@@ -216,20 +222,41 @@ i rommet og målinger gjort på alluminiumskloss.
   \end{center}
 \end{table} 
 
-
 \begin{table}[H]  
   \begin{center}
       \caption{I denne tabellen vises resultatene etter målinger på alluminiumskube med IR-  
-          termometeret, Fluke 62. \label{tab:ir1}}
+          termometeret, Fluke 62. \label{tab:ir2}}
   \begin{tabular}{|c|c|c|c|c|} \hline
-      \textbf{Hvstand til alluminiumskuben [m]} & \textbf{vinkel\( [^\circ]\)} & \textbf{reflektert bakgrunn} & målt temperatur [\(^\circ C\)] \\ \hline
-  Bord & \(23.4\) & \(0.4\)\\ \hline
-  Vegg & \(20.2\) & \(15\)\\ \hline
-  Stolpe & \(21.8\) & \(5\)\\ \hline
+      \textbf{Avstand til kuben [m]} & \textbf{vinkel\( [^\circ]\)} & 
+      \textbf{reflektert bakgrunn} & målt temperatur [\(^\circ C\)] \\ \hline
+    \(0.15\) & \(\sim0\) & eflekterer på seg selv & \(24.4\)\\ \hline
+  \(0.50\) & \(\sim0\) & reflekterer på seg selv & \( 23.8\)\\ \hline
+  \(1.5\) & \(\sim0\) & reflekterer på seg selv & \(24.6\)\\ \hline
+  \(2.0\) & \(\sim0\) & reflekterer på seg selv & \(23.4\)\\ \hline
+  \(0.2\) & \(\sim 10\) & vegg & \(22.2\)\\ \hline
+  \(0.35\) & \(\sim45\) & svart labjournal (matt) & \(24.0\)\\ \hline  
+  %\(0.35\) & \(\sim45\) & hvitt ark & \(24.2\)\\ \hline
+  \(0.35\) & \(\sim 45\) & Ole Gunnar & \(28.0\)\\ \hline
+  \(1.0\) & \(\sim 45\) & svart labjournal (matt) & \(23.6\)\\ \hline
+  \(1.0\) & \(\sim 45\) & hvitt ark & \(23.2\)\\ \hline
+  \(1.0\) & \(\sim 45\) & Ole Gunnar & \(27.2\)\\ \hline
   \end{tabular}
   \end{center}
-\end{table} 
+\end{table}
 
+Avstanden fra IR-termometeret til Leslies kube da målingene ble gjort, ble målt til \(0.3m\).
+
+\begin{table}[H]  
+  \begin{center}
+      \caption{Her presenteres målingene gjort med IR-termometer på Leslies kube, samt måling 
+          gjort med kubens innebygde termistor \label{tab:ir1}}
+  \begin{tabular}{|c|c|c|c|c|} \hline
+      \textbf{side1(blank)} & \textbf{side2(matt hvit)} & \textbf{side3(matt svart)} & 
+      \textbf{side4(metallisk)} & \textbf{motstand} \\ \hline
+  \(25.0\) & \(51.2\) & \(51.2\) & \(30.4\) & \(31.447\)\\ \hline
+  \end{tabular}
+  \end{center}
+\end{table}       
 
 
 \section{Diskusjon}
